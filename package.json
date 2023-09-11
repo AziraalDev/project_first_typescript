@@ -1,0 +1,17 @@
+{
+  "name": "project_first_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc-init": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
