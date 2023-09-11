@@ -32,6 +32,7 @@ console.log(doDoFoo(1, 2, ...someNumArray));
 function concatAll(items) {
     return new Array().concat(items);
 }
+// this will be a shallow copy of the original arrays, ensuring we get the exact return type
 let concatNumber = concatAll([1, 5, 7, 9, 3, 4]);
 let concatString = concatAll(['V', 'i', 'k', 't', 'o', 'r', 'i', 'a']);
 console.log(concatNumber);
