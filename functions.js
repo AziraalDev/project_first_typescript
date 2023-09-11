@@ -24,7 +24,15 @@ console.log(dooFoo(1, 2)); // 9 - 1 + 2 = 10
 console.log(dooFoo(1, 2, 6)); // 6 - 1 + 2 = 7
 //4. Rest param :
 function doDoFoo(n1, n2, ...n3) {
-    return n1 + n2 + n3.reduce((a, b) => a + b, 0);
+    return n1 + n2 + n3.reduce((a, b) => a + b, 0); // with 0 as an initial value;
 }
 let someNumArray = [2, 6, 4, 2, 1];
 console.log(doDoFoo(1, 2, ...someNumArray));
+// 5. Generics functions
+function concatAll(items) {
+    return new Array().concat(items);
+}
+let concatNumber = concatAll([1, 5, 7, 9, 3, 4]);
+let concatString = concatAll(['V', 'i', 'k', 't', 'o', 'r', 'i', 'a']);
+console.log(concatNumber);
+console.log(concatString);

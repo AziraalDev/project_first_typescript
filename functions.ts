@@ -33,3 +33,14 @@ function doDoFoo(n1: number, n2: number, ...n3: number[]): number{
 
 let someNumArray = [2, 6, 4, 2, 1];
 console.log(doDoFoo(1, 2, ...someNumArray));
+
+
+// 5. Generics functions
+function concatAll<Type>(items:Type[]):Type[] {
+    return new Array<Type>().concat(items); 
+}
+// this will be a shallow copy of the original arrays, ensuring we get the exact return type
+let concatNumber = concatAll<number>([1, 5, 7, 9, 3, 4]);
+let concatString = concatAll<string>(['V', 'i', 'k', 't', 'o', 'r', 'i', 'a']);
+console.log(concatNumber);
+console.log(concatString);
