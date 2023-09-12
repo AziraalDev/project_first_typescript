@@ -6,6 +6,8 @@ let height = 1.75; // floating-point
 // 2. String
 let wifeName = 'Viktoria';
 let familyStatus = "Very happy family";
+const aboutOurFamily = `Me and my wife ${wifeName} are ${familyStatus}`;
+console.log(aboutOurFamily);
 // 3. Boolean
 let hasKids = true;
 let ownHouse = false;
